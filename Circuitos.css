@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html{
+    background-color: rgb(192, 192, 109) (189, 231, 110);
+}
+
+
+header{
+    /*background-color: rgb(235, 191, 82)*/ 
+    /*margin: 10px;
+    padding: 10px; 
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    flex-direction: row;/**/
+   /* background-image: url("imagenes.html/Las-Leñas2.png");*/
+   /* width: 500px;
+    height: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    background-color: aliceblue;
+    background-size: cover;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem; 
+    position: sticky;   
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    margin-right: 20px;
+
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    transition: rgb(172, 161, 161) 1.5s ease;
+}
+.menu a:hover{
+    color: darkgrey ;
+}
+
+
+a{
+    font-size: 1.5em;
+    font-weight: 800;
+    color:black;
+    padding-bottom: 20px; 
+
+    text-decoration: none; 
+    margin: 10px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+#contactanos{
+    position: absolute; top: 0%; right:0%;
+    content: none;
+    margin: 15px;
+    border-radius: 10px;
+    padding-top: 20px;
+    background-color: rgb(243, 224, 184);
+}
+nav img{
+   width: 60px;
+   height: auto;
+   margin-top: 20px; 
+   padding-inline-start: 0.5rem;  
+   float: left;
+   margin-bottom: 20px;
+}
+
+
+h2{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    margin-top: 4rem;
+}
+h3{
+    font-size: large;
+    font-weight: bolder;
+    margin: 10px 5px;
+    padding: 10px 5px;
+}
+
+h3 p{
+    font-size: medium;
+    margin: 10px;
+    padding-right: 2rem ;
+    border: 2rem;
+   }
+main div>p{
+    margin-right: 1rem;
+}
+.circuitos img{
+    align-items: center;
+    margin: 2rem;
+}
