@@ -1,0 +1,128 @@
+#container_promos {
+    width: 80%;
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'line1 line1 line1'
+        'line2 line2 line2';
+    place-items: center;
+    
+}
+
+main {
+    display: flex;
+    
+}
+
+.publicidad {
+    width: 20%;
+    margin: 4rem 0 0 0;
+}
+
+#pub {
+    padding: 0.5rem;
+    margin: 0.8rem;
+    display: inline-block;
+    position: absolute;
+    background-color: aliceblue;
+    font-size: medium;
+    font-weight: 400;
+}
+
+#img_pub {
+    width: 100%;
+}
+
+.a_promo,
+.a_promo:link,
+.a_promo:visited {
+    text-decoration: none;
+    color: #070707;
+}
+
+.card_promo {
+    border: none;
+    padding: none;
+    border-radius: 10%;
+    background: linear-gradient(to right, #f5b9a8, #e6dcce);
+    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.8);
+    margin-bottom: 4rem;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.img {
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    width: 250px;
+    height: 150px;
+}
+
+.lugar {
+    font-size: 2rem;
+}
+
+/* .estadia, .pension, .traslado {
+    
+  } */
+
+.precio {
+
+    display: inline-block;
+
+    font-size: x-large;
+    background-color: #f57856;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.card_promo:hover {
+    background-color: #cfcfcf;
+    opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+    #container_promos {
+        width: 100%;
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'line1'
+            'line1'
+            'line1'
+            'line2'
+            'line2'
+            'line2';
+        place-items: center;
+    }
+
+    .publicidad {
+        display: none;
+    }
+
+}
+
+@media (min-width: 640px) and (max-width: 1130px) {
+
+    #container_promos {
+        width: 100%;
+        margin: 1rem 1rem;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'line1 line1'
+            'line2 line2'
+            'line3 line3';
+        place-items: center;
+    }
+
+    .publicidad {
+        display: none;
+    }
+}

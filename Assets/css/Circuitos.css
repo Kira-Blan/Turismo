@@ -1,0 +1,299 @@
+
+.video {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    background: linear-gradient(to right, #f46b45, #eea849);
+    padding: 1em;
+}
+
+.card-video {
+    display: inline-block;
+    border-color: #f46b45;
+    width: 90%;    
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    height: auto;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card-video ol li {
+    font-size: medium;
+}
+
+.norte {
+    display: inline-block;
+    width: 80%;
+    margin: 2rem;
+    justify-content: center;
+    font-size:medium;
+    font-weight: bold;
+}
+
+.norte ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: medium;
+}
+
+.sur {    
+    display: inline-block;
+    width: 80%;
+    margin: 2rem;
+    justify-content: center;
+    font-size:medium;
+    font-weight: bold;   
+}
+
+.sur ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: medium;
+}
+
+.costa {    
+     display: inline-block;
+     width: 80%;
+     margin: 2rem;
+    justify-content: center;
+    font-size:medium;
+    font-weight: bold;
+}
+
+.costa ol li {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em        
+}
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+    /*transition: rgb(172, 161, 161) 1.5s ease;*/
+    font-size: 1.5rem;
+    padding-left: 0%;
+  }
+  .menu>li {
+    margin: 0;
+    overflow: hidden;
+  }
+
+
+@media screen and (min-width:769px) {
+    
+
+    .contenedorvideo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .video {
+        margin-left: 0;
+        margin-right: 0;
+        width: fit-content;
+    }
+    .video iframe{
+        min-width: 400px;
+        min-height: 300px;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    
+    .card-video.h2{
+        margin: 0;
+    }
+    div.card-video{
+        margin-left: 0%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        align-items: center;
+    }
+    .card-video {
+        display: block;
+        border-color: #f46b45;
+        width: 95%;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        height: auto;
+        border: 3px solid #333;
+        border-radius: 20px;
+    }
+    .contenedorvideo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .video {
+        margin-left: 0;
+        margin-right: 0;
+        width: fit-content;
+    }
+    .video iframe{
+        min-width: 400px;
+        min-height: 300px;
+        justify-content: center;
+    }
+    
+    .norte {
+        display: inline-block;
+        width: 85%;
+        margin: 2rem;
+        justify-content: right;
+        font-size:medium;
+        font-weight: bold;
+    }
+    
+    .norte ol li {
+        margin-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: medium;
+    }
+    
+    .sur {    
+        display: inline-block;
+        width: 85%;
+        margin: 2rem;
+        justify-content: right;
+        font-size:medium;
+        font-weight: bold;   
+    }
+    
+    .sur ol li {
+        margin-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: medium;
+    }
+    
+    .costa {    
+         display: inline-block;
+         width: 85%;
+         margin: 2rem;
+        justify-content: right;
+        font-size:medium;
+        font-weight: bold;
+    }
+    .youtube{
+        width: 50vh;
+    }
+    
+}
+@media screen and (max-width: 450px){
+/*videos de circuitos*/
+    div.card-video{
+        margin-left: 0%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        align-items: center;
+    }
+    .card-video {
+        display: block;
+        border-color: #f46b45;
+        width: 100%;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        height: auto;
+        border: 3px solid #333;
+        border-radius: 20px;
+    }
+
+    .contenedorvideo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .video {
+        margin-left: 0;
+        margin-right: 0;
+        width: fit-content;
+    }
+    
+    .norte {
+        display: inline-block;
+        width: 85%;
+        margin: 2rem;
+        justify-content: right;
+        font-size:medium;
+        font-weight: bold;
+    }
+    
+    .norte ol li {
+        margin-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: medium;
+    }
+    
+    .sur {    
+        display: inline-block;
+        width: 85%;
+        margin: 2rem;
+        justify-content: right;
+        font-size:medium;
+        font-weight: bold;   
+    }
+    
+    .sur ol li {
+        margin-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: medium;
+    }
+    
+    .costa {    
+         display: inline-block;
+         width: 85%;
+         margin: 2rem;
+        justify-content: right;
+        font-size:medium;
+        font-weight: bold;
+    }
+    .menu {
+        position: absolute;
+        top: 10vh;
+        margin-top: 5rem;
+        left: 50%;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999 !important;
+    }
+    .menu a {
+      text-decoration: none;
+      color: aliceblue;
+      /*transition: rgb(172, 161, 161) 1.5s ease;*/
+      font-size: 1rem;
+  }
+}
+    

@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;    
+}
+
+body {
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color:  rgb(243, 224, 184);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  
+  margin: 0 auto;
+  padding: 0;    
+  /*position: absolute;*/ 
+}
+
+
+
+
+.menu a:hover {
+  color: rgb(177, 11, 11) ;
+}
+
+#escform{
+  font-size: 15px;
+    padding-bottom: 30px;
+    color: black;
+    text-align: left;
+}
+ 
+.contact_form {  
+  height: auto;
+  width: 80%; 
+  margin: 10%;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 10%;
+}
+  
+  
+input {
+  background-color: #fbfbfb; 
+  width: 90%; 
+   height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: goldenrod
+  margin-top 10px;  
+  padding-left: 10%;
+  margin-bottom: 20px; 
+}
+    
+textarea {
+  background-color: #fbfbfb; 
+  width: 90%; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+ padding-left: 10%;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}  
+  
+label {
+  display: block; 
+  float: center;  
+}  
+  
+button {
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: rgb(243, 190, 57);
+  border-color: goldenrod; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 90%;   
+  cursor: pointer;
+}  
+  
+button p {
+  color: rgb(238, 231, 212); 
+}  
+  
+span {
+  color: goldenrod; 
+}  
+  
+.aviso {
+  font-size: 13px;  
+  color: #0e0e0e;  
+}  
+  
+h1 {
+ font-size: 39px;  
+ text-align: letf; 
+ padding-bottom: 20px; 
+ color: goldenrod;
+}  
+  
+h3 {
+ font-size: 15px; 
+ padding-bottom: 30px;
+ color:black;   
+}  
+  
+p {
+ font-size: 14px; 
+ color: goldenrod; 
+}  
+  
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}  
+  
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}  
+  
+.formulario input:focus {
+  outline:0;
+  border: 1px solid goldenrod;
+}  
+  
+.formulario textarea:focus {
+  outline:0;
+  border: 1px solid goldenrod;
+}
+  
+.contacto {
+  display: inline;
+  text-align: right;
+  margin-bottom: 1rem;
+  padding-top: 1rem;    
+}
+
+#contacto {
+  color: #0e0e0e;
+  margin-right: 2em;
+  margin-bottom: 1rem;
+}
+  
+.foot {
+  text-align: center;  
+  width: 100%;
+  background-color: rgb(133, 36, 36);
+  padding: 5px;
+}
+#selectProvincias{
+  max-width: 90%;
+}
+.divlocalizacion{
+  margin-top: 2%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: aliceblue;
+  /*transition: rgb(172, 161, 161) 1.5s ease;*/
+  font-size: 1.5rem;
+  padding-left: 0%;
+}
+.menu>li {
+  margin: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .menu-button-container {
+      display: flex;
+  }
+
+  .menu {
+      position: absolute;
+      top: 2rem;
+      margin-top: 5rem;
+      left: 50%;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999 !important;
+  }
+
+
+  #menu-toggle~.menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+      display: block;
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5rem;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+      display: flex;
+      justify-content: left;
+      margin: 2em;
+      padding: 0.5em 0;
+      width: 100%;
+      background-color: #0e0e0e;
+  }
+
+  .menu>li:not(:last-child) {
+      border-bottom: 1px solid #444;
+  }
+}
+
+@media screen and (max-width:721px) {
+
+  p.Jujuy {
+      font-size: 2.3rem;
+      left: 10%;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: aliceblue;
+    /*transition: rgb(172, 161, 161) 1.5s ease;*/
+    font-size: 1.5rem;
+}
+  
+  .carrusel-elemento {
+      height: 10em;
+      width: auto;       
+  }
+
+  .imagenes {
+      margin: 0;
+      height: 8rem;
+      width: auto;
+  }
+
+  #carrusel-caja {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      height: 10rem;
+  }
+
+  div#carrusel-contenido{
+max-height: 8rem;
+  }
+
+  .footer-container {
+      margin-top: 0%;
+  }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 720) {
+
+  .menu a {
+    text-decoration: none;
+    color: aliceblue;
+    /*transition: rgb(172, 161, 161) 1.5s ease;*/
+    font-size: 1.3rem;
+}
+  /*
+  h2 {
+      font-family: "Montserrat";
+      font-size: 1.7rem;
+      font-weight: 1.7rem;
+      margin-bottom: 1rem;
+      margin-top: 4rem;
+      margin-left: 1rem;
+  }
+  
+  h3 {
+      font-size: 1.5rem;
+      font-weight: 0.5em;
+      text-align: center;
+      margin-top: 2rem;
+  }*/
+
+}
+
+@media screen and (max-width: 425px) {
+  h3 {
+      font-size: 1.5rem;
+      font-weight: 0.5em;
+      text-align: center;
+      margin-top: 2rem;
+  }
+
+  .menu {
+      position: absolute;
+      top: 10vh;
+      margin-top: 5rem;
+      left: 50%;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999 !important;
+  }
+  .menu a {
+    text-decoration: none;
+    color: aliceblue;
+    /*transition: rgb(172, 161, 161) 1.5s ease;*/
+    font-size: 1rem;
+}
+
+  #sponsors{
+      font-size: 1.5rem;
+      background-color: #f8f8f8;
+      color:#181818;
+      margin-bottom: 0.5rem;
+  }
+
+  .footer-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 1rem; 
+      padding-top: 1rem; 
+      padding-bottom: 0em; 
+      margin-bottom: 1em; 
+  }
+
+  .infored{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  #logo {
+      padding: 1rem;
+      background-size: cover;
+      image-rendering: auto;
+      height: fit-content;
+  }
+  .redes-container {
+      display: block;
+      text-align: center;
+  }
+  .Jujuy{
+      min-height: 50vh;
+  }
+  p.Jujuy {
+      font-size: auto;
+      text-align: center;
+  }
+  #contact{
+      font-weight: bolder;
+  }
+  h2 {
+      background-color: #f8f8f8;
+      font-family: "Montserrat";
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 1.7rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      margin-left: 0rem;
+  }
+  
+  }
